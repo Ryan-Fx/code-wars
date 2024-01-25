@@ -6,6 +6,12 @@
 //   return result;
 // }
 
+// **** X-REDUCE******
+
+// penjumlahan (membutuhkan initial value)
+const sumMix = (x) => x.reduce((a, b) => a + Number(b), 0);
+
+// perkalian (tidak membutuhkan initial value)
 const grow = (x) => x.reduce((a, b) => a * b);
 
-console.log(grow([1, 2, 3]));
+// console.log(grow([1, 2, 3]));
