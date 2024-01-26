@@ -14,7 +14,7 @@ console.log(grow([1, 2, 3]));
 
 // ------------------------------------------------------------------------------------------
 
-// menggabungkan kata menggunakan function join. hilangkan tandq string, tdk ada spasi di awal kata dan akhir kata
+// menggabungkan kata menggunakan function join. hilangkan tanda string, tdk ada spasi di awal kata dan akhir kata
 
 // cara 1 :
 const smash = (words) => words.join(" ");
@@ -29,13 +29,13 @@ function smash2(words) {
     if (i < words.length - 1) result += " "; // option 2
   }
   return result;
-
-  // catatan :
-  // jumlah index dalam array lebih kecil dari jumlah element dalam array.
-  // index array dimulai dari 0 ==>> [0,1,2,3,4]
-  // element dimulai dari 1 ==>> [1,2,3,4,5]
 }
 console.log(smash2(["hello", "world", "this", "is", "great"]));
+
+// catatan :
+// jumlah index dalam array lebih kecil dari jumlah element dalam array.
+// index array dimulai dari 0 ==>> [0,1,2,3,4]
+// element dimulai dari 1 ==>> [1,2,3,4,5]
 
 // ------------------------------------------------------------------------------------------
 
@@ -56,3 +56,33 @@ const findNeedle = (haystack) => {
 console.log(
   findNeedle(["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"])
 );
+
+// ------------------------------------------------------------------------------------------
+
+// jumlahkan hanya positive number yang ada dalam array
+
+function positiveSum(arr) {
+  // filter dan simpan positive numbers
+  const positiveNumbers = arr.filter((num) => num > 0);
+
+  // sum the positive numbers
+  return positiveNumbers.reduce((acc, current) => acc + current, 0);
+}
+console.log(positiveSum([-1, 2, 3, 4, -5]));
+
+// ------------------------------------------------------------------------------------------
+
+// buat sebuah function yang mengambil bilangan positif dan string, dan return new list dengan string yang sudah dikeluarkan.
+
+// cara 1
+const filter_list = (l) => {
+  // Return a new array with the strings filtered out
+  return l.filter((item) => typeof item !== "string");
+};
+console.log(filter_list([1, 2, "a", "b"]));
+
+// cara 2
+function filter_list2(l) {
+  return l.filter(Number.isInteger);
+}
+console.log(filter_list2([1, "c", 2, 3, "a", "b"]));
