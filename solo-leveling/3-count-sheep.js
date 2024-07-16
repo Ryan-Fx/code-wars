@@ -8,38 +8,40 @@
 //   return murmur;
 // };
 
-// const squareSum = (numbers) => {
-//   // Use map to square each number
-//   const squaredNumbers = numbers.map((num) => {
-//     return num * num;
-//   });
+const squareSum = (numbers) => {
+  // Use map to square each number
+  const squaredNumbers = numbers.map((num) => {
+    return num * num;
+  });
 
-//   // Use reduce to sum the squared values
-//   const sum = squaredNumbers.reduce((acc, val) => {
-//     return acc + val;
-//   }, 0);
+  // Use reduce to sum the squared values
+  const sum = squaredNumbers.reduce((acc, val) => {
+    return acc + val;
+  }, 0);
 
-//   return sum;
-// };
+  return sum;
+};
 
-// const stringToNumber = function (str) {
-//   // put your code here
-//   return parseInt(str, 10);
-// };
+const stringToNumber = function (str) {
+  // put your code here
+  return parseInt(str, 10);
+};
 
-// function rentalCarCost(d) {
-//   const dailyRate = 40;
-//   let totalCost = d * dailyRate; // Calculate total cost without any discounts
+function rentalCarCost(d) {
+  const dailyRate = 40;
+  let totalCost = d * dailyRate; // Calculate total cost without any discounts
 
-//   // Apply discounts based on the number of days rented
-//   if (d >= 7) {
-//     totalCost -= 50; // $50 off for 7 or more days
-//   } else if (d >= 3) {
-//     totalCost -= 20; // $20 off for 3 or more days
-//   }
+  // Apply discounts based on the number of days rented
+  if (d >= 7) {
+    totalCost -= 50; // $50 off for 7 or more days
+  } else if (d >= 3) {
+    totalCost -= 20; // $20 off for 3 or more days
+  }
 
-//   return totalCost;
-// }
+  return totalCost;
+}
+
+console.log(rentalCarCost(8));
 
 // function sumMix(x) {
 //   let totalSum = 0;

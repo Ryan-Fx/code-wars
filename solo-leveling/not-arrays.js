@@ -19,7 +19,7 @@ console.log(simpleMultiplication2(3));
 
 // ---------------------------------------------------------------------------------------------
 
-// buat kalkulator sederhana
+// BUAT SEBUAH FUNCTION MENGGUNAKAN OPERATOR ARITMATIKA (KALKULATOR SEDERHANA)
 // cara 1 :
 function basicOp(value1, operation, value2) {
   switch (operation) {
@@ -44,11 +44,11 @@ function basicOp2(o, a, b) {
   return eval(a + o + b);
 }
 
-console.log(basicOp2("+", 10, 5));
+console.log(basicOp2("*", 10, 5));
 
 // ---------------------------------------------------------------------------------------------
 
-// fake binary.
+// FAKE BINARY
 // Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'. Return the resulting string.
 function fakeBin(str) {
   return str
@@ -58,3 +58,16 @@ function fakeBin(str) {
 }
 
 console.log(fakeBin("4538553335566"));
+
+// ---------------------------------------------------------------------------------------------
+
+// BUAT FUNCTION HITUNG APAKAH SISA BENSIN CUKUP UNTUK MENCAPAI JARAK TERTENTU (RETURN TRUE/FALSE)
+
+// link soal: https://www.codewars.com/kata/5861d28f124b35723e00005e/train/javascript
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) =>
+  mpg * fuelLeft >= distanceToPump;
+
+console.log(zeroFuel(50, 25, 2));
+
+// catatan: nilai awal (initial value) dari function pengkondisian (conditional logic) = true or false

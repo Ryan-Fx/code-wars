@@ -11,10 +11,13 @@
 
 // initial value dari conditional logic = true or false (truthy or falsy)
 // pengkondisian (conditional logic), secara default mengembalikan true or false
-const hero = (bullets, dragons) => bullets / 2 >= dragons;
 
+// contoh 1:
 // function hero(bullets, dragon) {
 //   return bullets / 2 >= dragon ? true : false;
 // }
+
+// contoh 2:
+const hero = (bullets, dragons) => bullets / 2 >= dragons;
 
 console.log(hero(10, 5));

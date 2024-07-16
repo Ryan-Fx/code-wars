@@ -72,13 +72,10 @@ console.log(positiveSum([-1, 2, 3, 4, -5]));
 
 // ------------------------------------------------------------------------------------------
 
-// buat sebuah function yang mengambil bilangan positif dan string, dan return new list dengan string yang sudah dikeluarkan.
+// buat sebuah function yang mengambil bilangan positif dan string, dan return new list dengan string yang sudah dikeluarkan (hanya return bilangan positif).
 
 // cara 1
-const filter_list = (l) => {
-  // Return a new array with the strings filtered out
-  return l.filter((item) => typeof item !== "string");
-};
+const filter_list = (l) => l.filter((item) => typeof item !== "string");
 console.log(filter_list([1, 2, "a", "b"]));
 
 // cara 2
@@ -86,3 +83,13 @@ function filter_list2(l) {
   return l.filter(Number.isInteger);
 }
 console.log(filter_list2([1, "c", 2, 3, "a", "b"]));
+
+// ------------------------------------------------------------------------------------------
+
+// Write a function which calculates the average of the numbers in a given list.
+// cari jumlah rata-rata dari angka dalam array
+
+const findAverage = (array) =>
+  array.length > 0 ? array.reduce((a, b) => a + b) / array.length : 0;
+
+console.log(findAverage([8, 9, 9, 7, 8, 7, 8, 9, 9, 7, 8, 8, 7]));

@@ -9,4 +9,4 @@ const areYouPlayingBanjo = (name) => {
 
 console.log(areYouPlayingBanjo("Ryan"));
 
-// cek huruf awal, apakah 'r' atau 'R', menggunakan array (name[0]).
+// cek huruf awal, apakah 'r' atau 'R', menggunakan array, index pertama (0) (name[0]).
