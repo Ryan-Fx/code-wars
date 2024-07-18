@@ -18,7 +18,7 @@ const hasil = angka
 
 console.log(hasil);
 
-// split
+// split = return boolean
 function fake(angka) {
   return angka.split("").map((a) => a + 1);
 }

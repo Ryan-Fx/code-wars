@@ -9,7 +9,7 @@
 // **** X-REDUCE******
 
 // penjumlahan (membutuhkan initial value)
-const sumMix = (x) => x.reduce((a, b) => a + Number(b), 0);
+const sumMix = (x) => x.reduce((a, b) => a + b);
 
 // perkalian (tidak membutuhkan initial value)
 const grow = (x) => x.reduce((a, b) => a * b);
