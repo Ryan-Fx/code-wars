@@ -8,9 +8,9 @@ const totalNilai = nilaiKehadiran + nilaiTugas;
 
 console.log(totalNilai);
 
-let nilaiAkhir = 81;
+let nilaiAkhir = 2.0;
 
-if (nilaiAkhir == 80) {
+if (nilaiAkhir === 2) {
   console.log("nilai anda adalah " + nilaiAkhir + " anda lulus");
 } else {
   console.log("nilai anda adalah " + nilaiAkhir + " anda tidak lulus");
@@ -21,5 +21,3 @@ function genap(angka) {
 }
 
 console.log(genap(9));
-
-

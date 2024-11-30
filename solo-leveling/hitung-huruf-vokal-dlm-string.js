@@ -5,8 +5,8 @@ function getCount(str) {
 
   return str
     .toLowerCase()
-    .split("") // k m a u
+    .split("") // ["k", "m", "a", "u"]
     .filter((c) => vowels.includes(c)).length;
 }
 
-console.log(getCount("kmaukemanA"));
+console.log(getCount("kmau"));
