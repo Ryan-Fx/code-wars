@@ -1,4 +1,6 @@
 function getGrade(...s) {
+  console.log(s);
+
   const score = s.reduce((a, b) => a + b) / s.length;
 
   if (score >= 90) return "A";
